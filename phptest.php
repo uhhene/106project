@@ -17,7 +17,7 @@ $y=$_GET['value'];
 $sql = "INSERT INTO `array`(`index`, `value`) VALUES ($x,$y)";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "array[",$x,"]=",$y," assigned successfully" ;
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
